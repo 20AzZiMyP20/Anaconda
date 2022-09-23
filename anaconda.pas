@@ -1,7 +1,6 @@
 program MySuperPuperAnaconda;
 uses crt;
 
-label start;
 type direction = (up, down, left, right, stop);
 const WIDTH = 100; HEIGHT = 30; ScreenWidth = 160; ScreenHeight = 60;
 var  x, y: integer;
@@ -163,7 +162,6 @@ end;
 begin;
     clrscr;
     createBox;
-    start:
     GotoXY(WIDTH div 2, HEIGHT div 2 + 2);
     draw;
 end.
